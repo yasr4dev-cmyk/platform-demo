@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>منصة ولاء — نسخة تجريبية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">و</div>
+        <div><strong>منصة ولاء</strong><span>إدارة الولاء الذكية</span></div>
+      </div>
+      <div class="tenant-box">
+        <span>المتجر الحالي</span>
+        <strong>قهوة بغداد</strong>
+        <button id="tenantBtn">تبديل النشاط</button>
+      </div>
+      <nav>
+        <button class="nav-item active" data-view="dashboard">لوحة التحكم</button>
+        <button class="nav-item" data-view="customers">العملاء</button>
+        <button class="nav-item" data-view="cards">البطاقات الرقمية</button>
+        <button class="nav-item" data-view="rewards">النقاط والمكافآت</button>
+        <button class="nav-item" data-view="campaigns">الحملات</button>
+        <button class="nav-item" data-view="branches">الفروع</button>
+        <button class="nav-item" data-view="team">الموظفون والصلاحيات</button>
+        <button class="nav-item" data-view="reports">التقارير</button>
+        <button class="nav-item" data-view="integrations">التكاملات</button>
+        <button class="nav-item" data-view="settings">الإعدادات</button>
+      </nav>
+      <div class="sidebar-footer">نسخة واجهات تجريبية — لا توجد قاعدة بيانات</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <div class="page-title"><span id="eyebrow">نظرة عامة</span><h1 id="pageTitle">لوحة التحكم</h1></div>
+        <div class="top-actions">
+          <button class="ghost">🔔</button>
+          <button class="profile"><span>ي</span><div><strong>ياسر</strong><small>مدير الحساب</small></div></button>
+        </div>
+      </header>
+
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">×</button>
+      <h3>إضافة عميل جديد</h3>
+      <p>هذه العملية تجريبية وتُحفظ محلياً داخل المتصفح فقط.</p>
+      <form id="customerForm">
+        <label>اسم العميل<input id="customerName" required placeholder="مثال: علي حسين" /></label>
+        <label>رقم الهاتف<input id="customerPhone" required placeholder="07xx xxx xxxx" /></label>
+        <label>الرصيد الافتتاحي<input id="customerPoints" type="number" min="0" value="100" /></label>
+        <button class="primary wide" type="submit">إضافة العميل</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
