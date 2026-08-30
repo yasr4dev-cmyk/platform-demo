@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>منصة ولاء — نسخة تجريبية</title>
+  <meta name="theme-color" content="#1d4ed8" />
+  <title>منصة ولاء — تجربة حديثة</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -33,7 +34,7 @@
         <button class="nav-item" data-view="integrations">التكاملات</button>
         <button class="nav-item" data-view="settings">الإعدادات</button>
       </nav>
-      <div class="sidebar-footer">نسخة واجهات تجريبية — لا توجد قاعدة بيانات</div>
+      <div class="sidebar-footer">نسخة تجربة مستخدم تفاعلية — Frontend Demo</div>
     </aside>
 
     <main class="main">
@@ -41,29 +42,16 @@
         <button class="menu-btn" id="menuBtn">☰</button>
         <div class="page-title"><span id="eyebrow">نظرة عامة</span><h1 id="pageTitle">لوحة التحكم</h1></div>
         <div class="top-actions">
-          <button class="ghost">🔔</button>
+          <button class="ghost" title="التنبيهات">🔔</button>
           <button class="profile"><span>ي</span><div><strong>ياسر</strong><small>مدير الحساب</small></div></button>
         </div>
       </header>
-
       <section id="content" class="content"></section>
     </main>
   </div>
 
-  <div class="modal-backdrop" id="modalBackdrop">
-    <div class="modal">
-      <button class="modal-close" id="modalClose">×</button>
-      <h3>إضافة عميل جديد</h3>
-      <p>هذه العملية تجريبية وتُحفظ محلياً داخل المتصفح فقط.</p>
-      <form id="customerForm">
-        <label>اسم العميل<input id="customerName" required placeholder="مثال: علي حسين" /></label>
-        <label>رقم الهاتف<input id="customerPhone" required placeholder="07xx xxx xxxx" /></label>
-        <label>الرصيد الافتتاحي<input id="customerPoints" type="number" min="0" value="100" /></label>
-        <button class="primary wide" type="submit">إضافة العميل</button>
-      </form>
-    </div>
-  </div>
-
+  <div class="modal-backdrop" id="modalBackdrop"><div class="modal"></div></div>
   <script src="app.js"></script>
+  <script src="ux.js"></script>
 </body>
 </html>
